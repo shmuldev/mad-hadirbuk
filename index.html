@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f7f3">
+  <meta name="description" content="עדיין כותבים כל שורה, או שכל היום רק מדרבקים? 10 שאלות קצרות יגלו מה רמת ה-AI שלכם.">
+  <meta property="og:title" content="מד הדרבוק — כמה אתם באמת מדרבקים?">
+  <meta property="og:description" content="10 שאלות. 6 רמות. קצת אמת על היחסים שלכם עם AI.">
+  <title>מד הדרבוק — כמה אתם באמת מדרבקים?</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23e75c35'/%3E%3Ctext x='32' y='45' text-anchor='middle' font-size='44' fill='white'%3Eד%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <div class="shell">
+    <header>
+      <a class="brand" href="#" aria-label="מד הדרבוק — לעמוד הפתיחה">
+        <span class="brand-symbol" aria-hidden="true">ד<span>ּ</span></span>
+        <span>מד הדרבוק<span class="brand-dot">.</span></span>
+      </a>
+      <button class="text-button" id="about">מה הקטע? <span aria-hidden="true">↗</span></button>
+    </header>
+    <main id="app"></main>
+    <footer>
+      <span>נבנה ברוח אסכולת שמולדב <span class="footer-spark" aria-hidden="true">✳</span></span>
+      <span>כל היום רק מדרבק<span class="footer-dot">.</span></span>
+    </footer>
+  </div>
+  <dialog id="about-dialog" aria-labelledby="about-title">
+    <div class="dialog-top"><span class="eyebrow">קצת קונטקסט</span><button class="close" aria-label="סגירה">×</button></div>
+    <h2 id="about-title">רגע, מה זה לדרבק?</h2>
+    <p>לתת טיקט לסוכן AI, ולתת לו לעבוד. כמה אתם משחררים לו? זה כבר סיפור אחר.</p>
+    <p>השאלון מבוסס על החלוקה של שמולדב לרמות 0–5, בהשראת המאמר של Dan Shapiro. התוצאה היא ממוצע התשובות שלכם, מעוגל לרמה הקרובה.</p>
+    <p>זה שאלון הומוריסטי על הרגלי עבודה. רמה גבוהה יותר לא אומרת שאתם מתכנתים טובים יותר. תנשמו, אף אחד לא שולח את זה לראש צוות.</p>
+    <div class="source-links"><a href="https://wiki.shmuldev.com/" target="_blank" rel="noopener noreferrer">אסכולת הדרבוק ↗</a><a href="https://www.danshapiro.com/blog/2026/01/the-five-levels-from-spicy-autocomplete-to-the-software-factory/" target="_blank" rel="noopener noreferrer">המאמר המקורי ↗</a></div>
+  </dialog>
+  <p class="sr-only" role="status" id="announcement"></p>
+</body>
+</html>
