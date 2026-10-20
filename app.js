@@ -2,62 +2,62 @@ const questions = [
   {
     title: 'נחת טיקט חדש. מה הצעד הראשון?',
     hint: 'אחרי הקפה, כמובן.',
-    answers: ['פותחים קובץ. האצבעות כבר יודעות.', 'מדרבקים לו חלק. נשארים ליד ההגה.', 'נותנים את כל המשימה. שיחזור עם תוצאה.'],
-    scores: [0, 2, 5],
+    answers: ["פותחים קובץ. האצבעות כבר יודעות.", "נותנים לו פונקציה קטנה. שלא יתלהב.", "מדרבקים טיקט. חוזרים לריוויו.", "מבקשים תוצאה. הקוד זה עניין שלו."],
+    scores: [0, 1, 3, 5],
   },
   {
     title: 'מה ה־AI שלכם יודע על הקודבייס?',
     hint: 'מערכת יחסים מתחילה בקונטקסט.',
-    answers: ['כלום. נפגשים רק בשביל regex.', 'מספיק כדי לעבוד. אני בודק את הקוד שלו.', 'לא יודע מה הוא יודע. המוצר עובד.'],
-    scores: [0, 3, 5],
+    answers: ["כלום. נפגשים רק בשביל regex.", "מכיר את האזור. אני מנווט.", "יש לו specs וכללים. שייצא לעבוד.", "לא יודע מה הוא יודע. המוצר עובד."],
+    scores: [0, 2, 4, 5],
   },
   {
     title: 'מי כתב את הפיצ׳ר האחרון?',
     hint: 'ה־git blame לא כאן. אפשר להודות.',
-    answers: ['אני. יש כאב בשורש כף היד כהוכחה.', 'הוא את השחור. אני את המסובך.', 'אני ביקשתי פיצ׳ר. פתאום היה פיצ׳ר.'],
-    scores: [0, 2, 5],
+    answers: ["אני. יש כאב בשורש כף היד כהוכחה.", "אני. הוא הוסיף טסט ונח על זרי הדפנה.", "הוא כתב. אני צדתי שיטנס בריוויו.", "אני ביקשתי פיצ׳ר. פתאום היה פיצ׳ר."],
+    scores: [0, 1, 3, 5],
   },
   {
     title: 'משימה מורכבת. משחררים?',
     hint: 'כאן מתברר מי מחזיק את ההגה.',
-    answers: ['משחררים את ה־AI. אני על זה.', 'כן, אבל קורא כל שורה שהוא כותב.', 'מגדירים תוצאה. המימוש זה עניין שלו.'],
-    scores: [0, 3, 5],
+    answers: ["משחררים את ה־AI. אני על זה.", "את השחור כן. את המורכב אני כותב.", "כן, אבל קורא כל שורה שהוא כותב.", "מגדירים תוצאה. המימוש זה עניין שלו."],
+    scores: [0, 2, 3, 5],
   },
   {
     title: 'מה רוב יום העבודה שלכם?',
     hint: 'לא כולל ״רק חמש דקות״ בלינקדאין.',
-    answers: ['לכתוב קוד. פיזית. עם האצבעות.', 'לעשות ריוויו ולזהות שיטנס.', 'לבקש דברים ולבדוק מה יצא.'],
-    scores: [0, 3, 5],
+    answers: ["לכתוב קוד. פיזית. עם האצבעות.", "לעבוד בזוג עם ג׳וניור שלא ישן.", "לעשות ריוויו ולזהות שיטנס.", "לבקש דברים ולבדוק מה יצא."],
+    scores: [0, 2, 3, 5],
   },
   {
     title: 'הסוכן פתח PR ענק. מה עכשיו?',
     hint: '״שינוי קטן״. 47 קבצים.',
-    answers: ['איזה סוכן? אני פתחתי את ה־PR.', 'קפה חזק. עוברים על כל ה־diff.', 'לא פוגש PRs. מסתכל על המוצר.'],
-    scores: [0, 3, 5],
+    answers: ["איזה סוכן? אני פתחתי את ה־PR.", "לוקח בחזרה את החלקים המסובכים.", "קפה חזק. עוברים על כל ה־diff.", "לא פוגש PRs. מסתכל על המוצר."],
+    scores: [0, 2, 3, 5],
   },
   {
     title: 'יצאתם להפסקה. מה ה־AI עושה?',
     hint: 'זמן איכות עם הטוקנים.',
-    answers: ['כלום. הטאב של הצ׳אט סגור.', 'מסיים את העבודה השחורה שנתתי לו.', 'בונה את מה שביקשתי. לא שואל איך.'],
-    scores: [0, 2, 5],
+    answers: ["כלום. הטאב של הצ׳אט סגור.", "מסיים את העבודה השחורה שנתתי לו.", "מממש spec ומריץ בדיקות. שקט תעשייתי.", "בונה את מה שביקשתי. לא שואל איך."],
+    scores: [0, 2, 4, 5],
   },
   {
     title: 'איך נראית בקשה טיפוסית שלכם?',
     hint: 'הרב Cursor מקשיב.',
-    answers: ['״מה ה־regex לאימייל?״', '״תרים CRUD. בלוגיקה אני אטפל״', '״תבנה לי אפליקציה שעושה ככה״'],
-    scores: [0, 2, 5],
+    answers: ["״מה ה־regex לאימייל?״", "״תוסיף טסט. רק טסט. אני מכיר אותך״", "״הנה spec ובדיקות קבלה. תדרבק״", "״תבנה לי אפליקציה שעושה ככה״"],
+    scores: [0, 1, 4, 5],
   },
   {
     title: 'מתי העבודה מוכנה מבחינתכם?',
     hint: 'בואו נהיה מדעיים. בערך.',
-    answers: ['כשסיימתי לכתוב ולבדוק בעצמי.', 'כשהריוויו נקי והבדיקות עוברות.', 'כשהמוצר עושה את מה שביקשתי.'],
-    scores: [0, 3, 5],
+    answers: ["כשסיימתי לכתוב ולבדוק בעצמי.", "כשחיברתי את שלו ללוגיקה שלי.", "כשהתוצאה עומדת ב־spec ובבדיקות.", "כשהמוצר עושה את מה שביקשתי."],
+    scores: [0, 2, 4, 5],
   },
   {
     title: 'מה זה אומר אצלכם ״לפתח״?',
     hint: 'שאלה אחרונה. מותר משבר זהות קטן.',
-    answers: ['לכתוב את הקוד. כמו שזה נשמע.', 'לנהל את ה־AI ולעשות ריוויו.', 'להגיד מה אני רוצה. משהו כבר בונה.'],
-    scores: [0, 3, 5],
+    answers: ["לכתוב את הקוד. כמו שזה נשמע.", "להיות הסיניור של ג׳וניור דיגיטלי.", "להגדיר בדיוק מה לבנות ואיך לבדוק.", "להגיד מה אני רוצה. משהו כבר בונה."],
+    scores: [0, 2, 4, 5],
   },
 ]
 
@@ -72,7 +72,7 @@ const levels = [
 
 const app = document.querySelector('#app')
 const dialog = document.querySelector('#about-dialog')
-const storageKey = 'darbuk-quiz-v2'
+const storageKey = 'darbuk-quiz-v3'
 let answers = []
 let current = 0
 let screen = 'intro'
@@ -82,7 +82,7 @@ let shareResetTimer
 function loadProgress() {
   try {
     const saved = JSON.parse(localStorage.getItem(storageKey))
-    if (Array.isArray(saved) && saved.length <= questions.length && saved.every(value => Number.isInteger(value) && value >= 0 && value < 3)) answers = saved
+    if (Array.isArray(saved) && saved.length <= questions.length && saved.every(value => Number.isInteger(value) && value >= 0 && value < 4)) answers = saved
   } catch {
     answers = []
   }
@@ -137,7 +137,7 @@ function renderQuestion() {
     <p class="question-hint">${question.hint}</p>
     <div class="options" role="group" aria-labelledby="question-title">${question.answers.map((answer, index) => `<button class="option ${selected === index ? 'selected' : ''}" data-answer="${index}" aria-pressed="${selected === index}"><span class="option-key mono" aria-hidden="true">${index + 1}</span><span>${answer}</span><span class="answer-check" aria-hidden="true">✓</span></button>`).join('')}</div>
     <div class="quiz-nav"><button class="back" id="back">→ ${current === 0 ? 'לפתיחה' : 'הקודמת'}</button><button class="primary" id="next" ${selected === undefined ? 'disabled' : ''}>${current === questions.length - 1 ? 'נו, כמה אני מדרבק?' : 'השאלה הבאה'} <span aria-hidden="true">←</span></button></div>
-    <p class="keyboard-hint">גם המקלדת בעניין: 1–3 לבחירה · Enter להמשך</p>
+    <p class="keyboard-hint">גם המקלדת בעניין: 1–4 לבחירה · Enter להמשך</p>
   </section>`
   app.querySelectorAll('[data-answer]').forEach(button => button.onclick = () => selectAnswer(Number(button.dataset.answer)))
   document.querySelector('#back').onclick = () => { if (current === 0) intro(); else { current -= 1; renderQuestion() }; focusTitle() }
@@ -221,7 +221,7 @@ dialog.addEventListener('click', event => { if (event.target === dialog) { const
 document.querySelector('.brand').onclick = event => { event.preventDefault(); history.replaceState(null, '', location.pathname + location.search); intro(); focusTitle() }
 document.addEventListener('keydown', event => {
   if (screen !== 'quiz' || dialog.open || event.ctrlKey || event.metaKey || event.altKey) return
-  if (/^[1-3]$/.test(event.key)) { event.preventDefault(); selectAnswer(Number(event.key) - 1) }
+  if (/^[1-4]$/.test(event.key)) { event.preventDefault(); selectAnswer(Number(event.key) - 1) }
   if (event.key === 'Enter' && (event.target === document.body || event.target?.matches('h2, [data-answer]'))) { event.preventDefault(); nextQuestion() }
 })
 window.addEventListener('hashchange', handleHash)
